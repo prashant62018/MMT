@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MakeMyTrip</title>
+    <style>
+        body{
+            font-family: "Lato";
+            color: grey;
+        }
+    .background{
+        background: rgb(232,232,232);
+        background-repeat: no-repeat;
+        background-image: linear-gradient(to bottom,#051322,#15457c);
+        background-size: 100% 500px;
+        display: flex;
+        justify-content: center;
+    }
+    .container {
+        width: 1200px;
+    }
+    .logo{
+        height: 36px;
+        width: 113px;
+    }
+    .data{
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+    .categories {
+    background-color: white;
+    width: 950px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 1px 15px 1px #7a7a7a;
+    display: flex;
+    justify-content: space-evenly;
+    z-index: 2;
+    }
+    .categories span {
+        font-size: 14px;
+        padding: 10px;
+        padding-top: 20px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .fas{
+        font-size: 24px;
+        margin-bottom: 5px;
+    }
+    .tickets{
+        background-color: white;
+        width: 1200px;
+        height: 300px;
+        position: absolute;
+        top: 70px;
+        z-index: 1;
+        border-radius: 10px;
+        padding: 20px;
+    }
+    .ticket-type{
+        margin-top: 50px;
+        font-size: 14px;
+        font-weight: 800;
+    }
+    .ticket-type span{
+       padding: 5px;
+    }
+    .ticket-type span i{
+        font-size: 14px;
+    }
+    .selected-ticket-type{
+        background-color: rgb(211,211,211);
+        border-radius: 30px;
+    }
+    .flight-search{
+        border: 1px solid rgb(202, 202, 202);
+        display: flex;
+        margin-top: 10px;
+        border-radius: 10px;
+    }
+    .flight{
+        margin: 15px;
+        color: rgb(33,32,32) ;
+        width: 300px;
+        border-right: 1px solid rgb(140, 139, 139);
+    }
+    .flight h1{
+        margin: 0;
+    }
+    .flight1 {
+        margin: 15px;
+        color: rgb(33,32,32) ;
+        width: 150px;
+        border-right: 1px solid rgb(140, 139, 139);
+    }
+    .fare-search{
+        
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        display: flex;
+
+    }
+    .fare-select{
+        width: 40px;
+        display: flex;
+    }
+    .fare-type{
+        color: rgb(80,80,80);
+    }
+    .search-button{
+        width: 216px;
+        height: 44px;
+        background-color: rgb(73,161,244);
+        color: white;
+        font-size: 28px;
+        text-align: center;
+        border-radius: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        bottom: -20;
+        left: 40%;
+    }
+
+    </style>
+</head>
+<body class = "background">
+    <div class="container">
+     <img class = "logo"src="https://promos.makemytrip.com/Growth/Images/1x/mmt_dt_top_icon.png">
+      <div class = "data">
+         <div class = "categories">
+    <span><i</i>Flights</span>
+    <span><i</i>Hotels</span>
+    <span><i</i>Homestays&Villas</span>
+    <span><i</i>Holiday Package</span>
+    <span><i</i>Trains</span>
+    <span><i</i>Buses</span>
+    <span><i</i>Cabs</span>
+    <span><i</i>Forex and currency</span>
+    <span><i</i>Travel Insurance</span>
+    </div>
+    <div class="tickets">
+        <div class ="ticket-type">
+        <span class ="selected-ticket-type">ONEWAY</span>
+        <span><input type="radio"/>ROUND TRIP</span>
+        <span><input type="radio"/>MULTI CITY</span>
+        </div>
+    <div class="flight-search">
+    <div class="flight">
+        <span>FROM</span>
+        <h1>Chennai</h1>
+        <span>MAA,Chennai Airport India</span>
+    </div>
+    <div class="flight">
+        <span>TO</span>
+        <h1>Mumbai</h1>
+        <span>BOM, Chhatrapati Shivaji Mahraj International Airport</span>
+    </div>
+    <div class="flight1">
+        <span>Departure</span>
+        <h1> 14 jan'25</h1>
+        <span>Monday</span>
+    </div>
+    <div class="flight1">
+        <span>Return</span>
+        <h1>18 jan'25</h1>
+        <span>Thursday</span>
+    </div>
+    <div class="flight">
+        <span> Traveller & Class</span>
+        <h1>1 Traveller</h1>
+        <span>Econpmy/Premium Economy</span>
+    </div>
+</div>
+    <div class="fare-search">
+        <span class="fare-select">Select Fare Type</span>
+    </div>
+    <div class ="fare-type">
+        <span class ="selected-fare-type">Regular Fares</span>
+        <span><input type="radio"/>Armed Forces Fares</span>
+        <span><input type="radio"/>Student Fares</span>
+        <span><input type="radio"/>Senior Citizens Fares</span>
+        </div>
+    <div class="search-button">SEARCH
+    
+    </div>
+</div>
+</div>
+</body>
+</html>
